@@ -13,7 +13,7 @@ input = {
   "model": "faster_rcnn_inception_resnet_v2_atrous"
 }
 
-client = Algorithmia.client('simUTMULmOWj/OpAO9AUMXk+sFX1')
+client = Algorithmia.client('YOUR_API_KEY')
 algo = client.algo('deeplearning/ObjectDetectionCOCO/0.2.1')
 
 result = algo.pipe(input).result

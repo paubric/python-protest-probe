@@ -7,6 +7,6 @@ input = {
   "modelUrl": "data://opencv/SampleModels/haarcascade_fullbody.xml",
   "outputUrl": "data://paubric3/protest_data/" + str(image_number) + "_result.jpg"
 }
-client = Algorithmia.client('simUTMULmOWj/OpAO9AUMXk+sFX1')
+client = Algorithmia.client('YOUR_API_KEY')
 algo = client.algo('opencv/ObjectDetectionWithModels/0.1.51')
 print(algo.pipe(input).result)
